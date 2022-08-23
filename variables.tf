@@ -37,6 +37,6 @@ variable "group" {
   description = "The fully-qualified URL of an Instance Group or Network Endpoint Group resource"
 }
 variable "health_checks" {
-  type        = string
+  type        = list(string)
   description = "The health_checks"
 }
