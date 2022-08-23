@@ -15,7 +15,14 @@ variable "ip_address" {
   type        = string
   description = "The IP address that this forwarding rule serves. When a client sends traffic to this IP address, the forwarding rule directs the traffic to the target that you specify in the forwarding rule"
 }
-
+variable "project_id" {
+  type        = string
+  description = " The ID of the project in which the resource belongs"
+}
+variable "name" {
+  type        = string
+  description = "Name of the resource; provided by the client when the resource is created"
+}
 #backend service
 variable "protocol" {
   type        = string
