@@ -22,14 +22,14 @@ variable "protocol" {
   description = "The protocol this BackendService uses to communicate with backends.Possible values are HTTP, HTTPS, HTTP2, TCP, SSL, and GRPC"
 }
 variable "load_balancing_mode" {
-    type = string
-    description = "Indicates whether the backend service will be used with internal or external load balancing. Possible values are EXTERNAL, INTERNAL_SELF_MANAGED, and EXTERNAL_MANAGED"
+  type        = string
+  description = "Indicates whether the backend service will be used with internal or external load balancing. Possible values are EXTERNAL, INTERNAL_SELF_MANAGED, and EXTERNAL_MANAGED"
 }
 variable "group" {
-    type = string
-    description = "The fully-qualified URL of an Instance Group or Network Endpoint Group resource"
+  type        = string
+  description = "The fully-qualified URL of an Instance Group or Network Endpoint Group resource"
 }
 variable "health_checks" {
-  type = string
+  type        = string
   description = "The health_checks"
 }

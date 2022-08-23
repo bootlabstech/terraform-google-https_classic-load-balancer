@@ -57,13 +57,13 @@ resource "google_compute_url_map" "url_map" {
 #                     pwd
 # 					gcloud auth list
 # 					gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://asia.gcr.io
-					
-					
+
+
 # 					gsutil cp gs://mgcluleagcs01/deployment/publicKey.txt publicKey.txt
 #                     gsutil cp gs://mgcluleagcs01/deployment/server.key server.key	
-                                       
+
 #                     ls -la				
-					
+
 # 					cd lms
 # 					gsutil cp gs://mgcluleagcs01/deployment/lms/.env .env
 # 					cat .env
@@ -73,21 +73,21 @@ resource "google_compute_url_map" "url_map" {
 # 					docker build -t cerouatlms .
 # 					docker image tag cerouatlms:latest asia.gcr.io/leap-uat-566026/cerouatlms:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatlms:1
-					
+
 # 					cd ../masters
 # 					gsutil cp gs://mgcluleagcs01/deployment/masters/.env .env
 # 					cat .env
 # 					docker build -t cerouatmasters .
 # 					docker image tag cerouatmasters:latest asia.gcr.io/leap-uat-566026/cerouatmasters:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatmasters:1
-					
+
 # 					cd ../user-management
 # 					gsutil cp gs://mgcluleagcs01/deployment/usermodule/.env .env
 # 					cat .env
 # 					docker build -t cerouatusermodule .
 # 					docker image tag cerouatusermodule:latest asia.gcr.io/leap-uat-566026/cerouatusermodule:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatusermodule:1
-                    
+
 # 					cd ../customer-management
 # 					gsutil cp gs://mgcluleagcs01/deployment/customermodule/.env .env
 # 					cat .env
@@ -96,21 +96,21 @@ resource "google_compute_url_map" "url_map" {
 # 					docker build -t cerouatcustomermodule .
 # 					docker image tag cerouatcustomermodule:latest asia.gcr.io/leap-uat-566026/cerouatcustomermodule:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatcustomermodule:1
-					
+
 # 					cd ../react_admin
 # 					gsutil cp gs://mgcluleagcs01/deployment/react_admin/.env .env
 # 					cat .env					
 # 					docker build -t cerouatadminui .
 # 					docker image tag cerouatadminui:latest asia.gcr.io/leap-uat-566026/cerouatadminui:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatadminui:1
-					
+
 # 					cd ../react_user
 # 					gsutil cp gs://mgcluleagcs01/deployment/react_user/.env .env
 # 					cat .env
 # 					docker build -t cerouatfrontendui .
 # 					docker image tag cerouatfrontendui:latest asia.gcr.io/leap-uat-566026/cerouatfrontendui:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatfrontendui:1
-					
+
 # 					cd ../payments
 # 					mkdir -p keys
 # 					cp ../publicKey.txt keys/publicKey.txt
@@ -120,7 +120,7 @@ resource "google_compute_url_map" "url_map" {
 # 					docker build -t cerouatpayments .
 # 					docker image tag cerouatpayments:latest asia.gcr.io/leap-uat-566026/cerouatpayments:1
 # 					docker push asia.gcr.io/leap-uat-566026/cerouatpayments:1
-					
+
 # 					cd ../blog
 # 					docker build -t cerouatblog .
 # 					docker image tag cerouatblog:latest asia.gcr.io/leap-uat-566026/cerouatblog:1
@@ -128,6 +128,6 @@ resource "google_compute_url_map" "url_map" {
 #                 """
 #             }
 #         }
-        
+
 #     }
 # }
