@@ -36,6 +36,6 @@ resource "google_compute_url_map" "url_map" {
   name            = "${var.name}-url-map"
   default_service = google_compute_backend_service.backend_service.id
   depends_on = [
-    google_compute_backend_service.backend_service.backend_service
+    google_compute_backend_service.backend_service
   ]
 }
