@@ -27,7 +27,7 @@ resource "google_compute_target_http_proxy" "target-proxy" {
   name    = "${var.name}-target-proxy"
   url_map = google_compute_url_map.url_map.id
   depends_on = [
-    google_compute_url_map.url_map.url_map
+    google_compute_url_map.url_map
   ]
 }
 
